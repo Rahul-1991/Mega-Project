@@ -5,7 +5,7 @@ class CeaserCipher(object):
             key = raw_input('Enter key for ceaser cipher : ')
             if key.isdigit():
                 break
-        return int(key)
+        return int(key)%26
 
     def get_string_from_user(self):
         input_string = raw_input('Enter string to encrypt or decrypt : ')
